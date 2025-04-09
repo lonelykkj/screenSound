@@ -1,9 +1,12 @@
 ﻿// Screen Sound
 using System;
+using System.Collections.Generic;
+using System.Threading;
 
 string welcomeMSG = "\nWelcome!";
+List<string> bandList = new List<string>();
 
-void ShowWelcomeMSG()
+void ShowLogo()
 {
     Console.WriteLine(@"
 ░██████╗░█████╗░██████╗░███████╗███████╗███╗░░██╗  ░██████╗░█████╗░██╗░░░██╗███╗░░██╗██████╗░
@@ -30,10 +33,10 @@ void ShowOptionsMenu()
     switch (option)
     {
         case 1:
-            Console.WriteLine("Registering a band...");
+            RegisterBands();
             break;
         case 2:
-            Console.WriteLine("Showing all bands...");
+            ShowBands();
             break;
         case 3:
             Console.WriteLine("Rating a band...");
@@ -42,7 +45,7 @@ void ShowOptionsMenu()
             Console.WriteLine("Showing average rating...");
             break;
         case 5:
-            Console.WriteLine("Exiting...");
+            ExitAplication();
             break;
         default:
             Console.WriteLine("Invalid option. Try again.");
@@ -50,5 +53,51 @@ void ShowOptionsMenu()
     }
 }
 
-ShowWelcomeMSG();
+void RegisterBands()
+{
+    Console.Clear();
+
+    Console.WriteLine("--- Band registration ---");
+    Console.Write("\nEnter the name of the band you want to register: ");
+
+    string bandName = Console.ReadLine()!;
+    bandList.Add(bandName);
+
+    Console.WriteLine($"The band {bandName} was successfully registered!");
+
+    Thread.Sleep(1000);
+    Console.Clear();
+
+    ShowLogo();
+    ShowOptionsMenu();
+}
+
+void ShowBands()
+{
+    Console.Clear();
+
+    Console.WriteLine("--- All band's registrated ---");
+    Console.WriteLine("");
+
+    for (int i = 0; i < bandList.Count; i++)
+    {
+        Console.WriteLine($"Band: {bandList[i]}");
+    }
+
+    Console.WriteLine("\nPress any key to exit");
+
+    Console.ReadKey();
+    Console.Clear();
+
+    ShowLogo();
+    ShowOptionsMenu();
+}
+
+void ExitAplication()
+{
+    Console.Clear();
+    Environment.Exit(0);
+}
+
+ShowLogo();
 ShowOptionsMenu();
