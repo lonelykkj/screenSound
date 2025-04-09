@@ -1,0 +1,16 @@
+C:\Users\heitor.carvalho\desktop\screenSound\bin\Debug\net5.0\screenSound.exe
+C:\Users\heitor.carvalho\desktop\screenSound\bin\Debug\net5.0\screenSound.deps.json
+C:\Users\heitor.carvalho\desktop\screenSound\bin\Debug\net5.0\screenSound.runtimeconfig.json
+C:\Users\heitor.carvalho\desktop\screenSound\bin\Debug\net5.0\screenSound.runtimeconfig.dev.json
+C:\Users\heitor.carvalho\desktop\screenSound\bin\Debug\net5.0\screenSound.dll
+C:\Users\heitor.carvalho\desktop\screenSound\bin\Debug\net5.0\ref\screenSound.dll
+C:\Users\heitor.carvalho\desktop\screenSound\bin\Debug\net5.0\screenSound.pdb
+C:\Users\heitor.carvalho\desktop\screenSound\obj\Debug\net5.0\screenSound.csproj.AssemblyReference.cache
+C:\Users\heitor.carvalho\desktop\screenSound\obj\Debug\net5.0\screenSound.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\heitor.carvalho\desktop\screenSound\obj\Debug\net5.0\screenSound.AssemblyInfoInputs.cache
+C:\Users\heitor.carvalho\desktop\screenSound\obj\Debug\net5.0\screenSound.AssemblyInfo.cs
+C:\Users\heitor.carvalho\desktop\screenSound\obj\Debug\net5.0\screenSound.csproj.CoreCompileInputs.cache
+C:\Users\heitor.carvalho\desktop\screenSound\obj\Debug\net5.0\screenSound.dll
+C:\Users\heitor.carvalho\desktop\screenSound\obj\Debug\net5.0\ref\screenSound.dll
+C:\Users\heitor.carvalho\desktop\screenSound\obj\Debug\net5.0\screenSound.pdb
+C:\Users\heitor.carvalho\desktop\screenSound\obj\Debug\net5.0\screenSound.genruntimeconfig.cache
