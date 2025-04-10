@@ -3,14 +3,17 @@
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.Threading;
 
 string welcomeMSG = "\nWelcome!";
 // List<string> bandList = new List<string>{"Pink Floyd", "RadioHead", "Black Sabbath"};
 
-Dictionary<string, List<int>> bandsRegistred = new Dictionary<string, List<int>>();
-bandsRegistred.Add("Pink Floyd", new List<int> { 10, 8, 9 });
-bandsRegistred.Add("The Beatles", new List<int>());
+Dictionary<string, List<int>> bandsRegistred = new Dictionary<string, List<int>>() {
+    {"Pink Floyd", new List<int> { 10, 8, 9 }},
+    {"The Beatles", new List<int>()}
+};
 
 void ShowLogo()
 {
@@ -48,7 +51,7 @@ void ShowOptionsMenu()
             RateBand();
             break;
         case 4:
-            Console.WriteLine("Showing average rating...");
+            BandAvarage();
             break;
         case 5:
             ExitAplication();
@@ -120,6 +123,38 @@ void RateBand()
         Console.WriteLine($"\nNote {rated} was successfully registered for the band {bandName}");
 
         Thread.Sleep(2000);
+        Console.Clear();
+        ShowLogo();
+        ShowOptionsMenu();
+    }
+    else
+    {
+        Console.Write($"The {bandName} band was not found\n");
+        Console.WriteLine("\nPress any key to exit");
+
+        Console.ReadKey();
+        Console.Clear();
+        ShowLogo();
+        ShowOptionsMenu();
+    }
+}
+
+void BandAvarage()
+{
+    Console.Clear();
+
+    Console.WriteLine("--- Band's avarage ---\n");
+    Console.Write("Enter the name of the band you want to display the media for: ");
+    string bandName = Console.ReadLine();
+
+    if (bandsRegistred.ContainsKey(bandName))
+    {
+        List<int> bandRate = bandsRegistred[bandName];
+
+        Console.WriteLine($"{bandName} average is {bandRate.Average()}");
+        Console.WriteLine("\nPress any key to exit");
+
+        Console.ReadKey();
         Console.Clear();
         ShowLogo();
         ShowOptionsMenu();
