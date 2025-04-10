@@ -1,10 +1,16 @@
 ﻿// Screen Sound
+//.NET version 5.0.414
+
 using System;
 using System.Collections.Generic;
 using System.Threading;
 
 string welcomeMSG = "\nWelcome!";
-List<string> bandList = new List<string>();
+// List<string> bandList = new List<string>{"Pink Floyd", "RadioHead", "Black Sabbath"};
+
+Dictionary<string, List<int>> bandsRegistred = new Dictionary<string, List<int>>();
+bandsRegistred.Add("Pink Floyd", new List<int> { 10, 8, 9 });
+bandsRegistred.Add("The Beatles", new List<int>());
 
 void ShowLogo()
 {
@@ -39,7 +45,7 @@ void ShowOptionsMenu()
             ShowBands();
             break;
         case 3:
-            Console.WriteLine("Rating a band...");
+            RateBand();
             break;
         case 4:
             Console.WriteLine("Showing average rating...");
@@ -61,11 +67,11 @@ void RegisterBands()
     Console.Write("\nEnter the name of the band you want to register: ");
 
     string bandName = Console.ReadLine()!;
-    bandList.Add(bandName);
+    bandsRegistred.Add(bandName, new List<int>());
 
     Console.WriteLine($"The band {bandName} was successfully registered!");
 
-    Thread.Sleep(1000);
+    Thread.Sleep(2000);
     Console.Clear();
 
     ShowLogo();
@@ -76,12 +82,16 @@ void ShowBands()
 {
     Console.Clear();
 
-    Console.WriteLine("--- All band's registrated ---");
-    Console.WriteLine("");
+    Console.WriteLine("--- All band's registrated ---\n");
 
-    for (int i = 0; i < bandList.Count; i++)
+    // for (int i = 0; i < bandList.Count; i++)
+    // {
+    //     Console.WriteLine($"Band: {bandList[i]}");
+    // }
+
+    foreach (string band in bandsRegistred.Keys)
     {
-        Console.WriteLine($"Band: {bandList[i]}");
+        Console.WriteLine($"Band: {band}");
     }
 
     Console.WriteLine("\nPress any key to exit");
@@ -91,6 +101,39 @@ void ShowBands()
 
     ShowLogo();
     ShowOptionsMenu();
+}
+
+void RateBand()
+{
+    Console.Clear();
+
+    Console.WriteLine("--- Rate Band's ---\n");
+    Console.Write("Write the name of the band you want to review: ");
+    string bandName = Console.ReadLine();
+
+    if (bandsRegistred.ContainsKey(bandName))
+    {
+        Console.Write($"Rate the band {bandName}: ");
+        int rated = int.Parse(Console.ReadLine()!);
+
+        bandsRegistred[bandName].Add(rated);
+        Console.WriteLine($"\nNote {rated} was successfully registered for the band {bandName}");
+
+        Thread.Sleep(2000);
+        Console.Clear();
+        ShowLogo();
+        ShowOptionsMenu();
+    }
+    else
+    {
+        Console.Write($"The {bandName} band was not found\n");
+        Console.WriteLine("\nPress any key to exit");
+
+        Console.ReadKey();
+        Console.Clear();
+        ShowLogo();
+        ShowOptionsMenu();
+    }
 }
 
 void ExitAplication()
