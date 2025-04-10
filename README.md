@@ -1,43 +1,43 @@
 # 🎶 Screen Sound - Backend API
 
-## Descrição
+## Description
 
-**Screen Sound** é uma aplicação **back-end** desenvolvida em C# que simula uma plataforma de streaming musical. O sistema permite o gerenciamento de **bandas**, com foco exclusivo na estrutura e funcionamento do **back-end**, sem interface gráfica.
+**Screen Sound** is a **back-end application** developed in C# that simulates a music streaming platform. The system allows the management of **bands**, focusing exclusively on the structure and functionality of the **back-end**, without a graphical interface.
 
-Este projeto foi criado com fins educacionais, para praticar conceitos como **programação orientada a objetos**, **estruturas de dados** e **interação com o usuário via terminal**.
+This project was created for educational purposes, to practice concepts such as **object-oriented programming**, **data structures**, and **user interaction via the terminal**.
 
-## Funcionalidades
+## Features
 
-- ✅ Cadastrar bandas  
-- ✅ Listar todas as bandas  
-- ✅ Avaliar bandas  
-- ✅ Exibir média de avaliação das bandas  
-- ✅ Encerrar o programa
+- ✅ Register bands  
+- ✅ List all bands  
+- ✅ Rate bands  
+- ✅ Display average band ratings  
+- ✅ Exit the program
 
-## Tecnologias utilizadas
+## Technologies Used
 
 - 💻 **C#**
 - 🧠 .NET (console app)
-- 📁 Armazenamento em memória (sem banco de dados)
+- 📁 In-memory storage (no database)
 
-## Como executar
+## How to Run
 
-1. Clone o repositório:
+1. Clone the repository:
    ```bash
-   git clone https://github.com/seu-usuario/screensound-backend.git
+   git clone https://github.com/your-username/screensound-backend.git
    ```
 
-2. Acesse a pasta do projeto:
+2. Navigate to the project folder:
    ```bash
    cd screenSound
    ```
 
-3. Execute o projeto:
+3. Run the project:
    ```bash
    dotnet run
    ```
 
-## Estrutura do Projeto
+## Project Structure
 
 ```
 /ScreenSound
@@ -52,11 +52,11 @@ Este projeto foi criado com fins educacionais, para praticar conceitos como **pr
 └── README.md
 ```
 
-## Objetivo do Projeto
+## Project Goals
 
-Este projeto tem como objetivo reforçar:
+This project aims to reinforce:
 
-- 📌 Lógica de programação
-- 📌 Estruturação de aplicações back-end
-- 📌 Prática com menus interativos e entrada de dados via console
-- 📌 Aplicação de conceitos de POO em C#
+- 📌 Programming logic
+- 📌 Structuring back-end applications
+- 📌 Practice with interactive menus and console input
+- 📌 Application of OOP concepts in C#
