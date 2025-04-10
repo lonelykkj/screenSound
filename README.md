@@ -2,7 +2,7 @@
 
 ## Descrição
 
-**Screen Sound** é uma aplicação **back-end** desenvolvida em C# que simula uma plataforma de streaming musical. O sistema permite o gerenciamento de **bandas**, **artistas** e **músicas**, com foco exclusivo na estrutura e funcionamento do **back-end**, sem interface gráfica.
+**Screen Sound** é uma aplicação **back-end** desenvolvida em C# que simula uma plataforma de streaming musical. O sistema permite o gerenciamento de **bandas**, com foco exclusivo na estrutura e funcionamento do **back-end**, sem interface gráfica.
 
 Este projeto foi criado com fins educacionais, para praticar conceitos como **programação orientada a objetos**, **estruturas de dados** e **interação com o usuário via terminal**.
 
