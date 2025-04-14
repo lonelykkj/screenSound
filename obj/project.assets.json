@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\heitor.carvalho\\desktop\\screenSound\\screenSound.csproj",
+      "projectUniqueName": "C:\\Users\\heitor.carvalho\\Desktop\\Projetos\\screenSound\\screenSound.csproj",
       "projectName": "screenSound",
-      "projectPath": "C:\\Users\\heitor.carvalho\\desktop\\screenSound\\screenSound.csproj",
+      "projectPath": "C:\\Users\\heitor.carvalho\\Desktop\\Projetos\\screenSound\\screenSound.csproj",
       "packagesPath": "C:\\Users\\heitor.carvalho\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\heitor.carvalho\\desktop\\screenSound\\obj\\",
+      "outputPath": "C:\\Users\\heitor.carvalho\\Desktop\\Projetos\\screenSound\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
