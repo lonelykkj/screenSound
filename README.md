@@ -45,10 +45,7 @@ This project was created for educational purposes, to practice concepts such as 
 ├── Models/
 │   ├── Band.cs
 │   ├── Music.cs
-├── Services/
-│   └── BandService.cs
-├── Utils/
-│   └── MenuHelper.cs
+│   ├── Album.cs
 └── README.md
 ```
 
