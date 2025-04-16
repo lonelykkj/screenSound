@@ -1,12 +1,13 @@
-﻿using System;
+﻿using screenSound.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 
 Banda pinkFloyd = new("Pink Floyd");
-pinkFloyd.AdicionarNota(10);
-pinkFloyd.AdicionarNota(8);
-pinkFloyd.AdicionarNota(9);
+pinkFloyd.AdicionarNota(new Avaliacao(10));
+pinkFloyd.AdicionarNota(new Avaliacao(8));
+pinkFloyd.AdicionarNota(new Avaliacao(9));
 Banda beatles = new("The Beatles");  
 
 Dictionary<string, Banda> bandasRegistradas = new();
@@ -143,9 +144,9 @@ void AvaliarUmaBanda()
     {
         Banda banda = bandasRegistradas[nomeDaBanda];
         Console.Write($"Qual a nota que a banda {nomeDaBanda} merece: ");
-        int nota = int.Parse(Console.ReadLine()!);
+        Avaliacao nota = Avaliacao.Parse(Console.ReadLine()!);
         banda.AdicionarNota(nota);
-        Console.WriteLine($"\nA nota {nota} foi registrada com sucesso para a banda {nomeDaBanda}");
+        Console.WriteLine($"\nA nota {nota.Nota} foi registrada com sucesso paral a banda {nomeDaBanda}");
         Thread.Sleep(2000);
         Console.Clear();
         ExibirOpcoesDoMenu();
