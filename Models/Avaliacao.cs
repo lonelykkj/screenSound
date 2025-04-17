@@ -10,6 +10,8 @@ namespace screenSound.Models
     {
         public Avaliacao(int not)
         {
+            if (Nota < 0) Nota = 0;
+            if (Nota > 10) Nota = 10;
             Nota = Nota;
         }
            
@@ -19,5 +21,6 @@ namespace screenSound.Models
             int nota = int.Parse(texto);
             return new Avaliacao(nota);
         }
+        
     }
 }
