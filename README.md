@@ -46,6 +46,15 @@ This project was created for educational purposes, to practice concepts such as 
 │   ├── Band.cs
 │   ├── Music.cs
 │   ├── Album.cs
+│   ├── Avaliacao.cs
+├── Menus/
+│   ├── Menu.cs
+│   ├── MenuAvaliarBanda.cs
+│   ├── MenuExibirDetalhes.cs
+│   ├── MenuMostrarBandasRegistradas.cs
+│   ├── MenuRegistrarAlbum.cs
+│   ├── MenuRegistrarBanda.cs
+│   ├── MenuSair.cs
 └── README.md
 ```
 
