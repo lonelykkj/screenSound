@@ -8,7 +8,7 @@ namespace screenSound.Models
 {
     internal class Avaliacao
     {
-        public Avaliacao(int not)
+        public Avaliacao(int nota)
         {
             if (Nota < 0) Nota = 0;
             if (Nota > 10) Nota = 10;

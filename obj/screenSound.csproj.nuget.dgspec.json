@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dev\\Projetos\\screenSound\\screenSound.csproj": {}
+    "C:\\dev\\projetos\\screenSound\\screenSound.csproj": {}
   },
   "projects": {
-    "C:\\Dev\\Projetos\\screenSound\\screenSound.csproj": {
+    "C:\\dev\\projetos\\screenSound\\screenSound.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\Projetos\\screenSound\\screenSound.csproj",
+        "projectUniqueName": "C:\\dev\\projetos\\screenSound\\screenSound.csproj",
         "projectName": "screenSound",
-        "projectPath": "C:\\Dev\\Projetos\\screenSound\\screenSound.csproj",
+        "projectPath": "C:\\dev\\projetos\\screenSound\\screenSound.csproj",
         "packagesPath": "C:\\Users\\heitor.carvalho\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\Projetos\\screenSound\\obj\\",
+        "outputPath": "C:\\dev\\projetos\\screenSound\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
