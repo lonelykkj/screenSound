@@ -17,5 +17,9 @@ namespace screenSound.Menus
             Console.WriteLine(asteriscos + "\n");
         }
 
+        public virtual void Executar(Dictionary<string, Banda> bandasRegistradas){
+            Console.Clear();
+        }
+
     }
 }
