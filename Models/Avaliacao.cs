@@ -12,7 +12,7 @@ namespace screenSound.Models
         {
             if (Nota < 0) Nota = 0;
             if (Nota > 10) Nota = 10;
-            Nota = Nota;
+            Nota = nota;
         }
            
         public int Nota { get; }
